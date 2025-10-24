@@ -9,3 +9,12 @@
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
 }
+.left-nav{
+    grid-area: 1/1/-1/2;
+}
+.search-bar{
+    grid-area: 1/2/2/-1;
+}
+.right-content{
+    grid-area: 2/2/-1/-1;
+}
