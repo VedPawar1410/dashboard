@@ -24,12 +24,14 @@
 
 /* Left dashboard column*/
 .left-nav{
-    grid-template-rows: 1fr 3fr 8fr;
+    grid-template-rows: 1fr 8fr 1fr;
     background-color: rgb(23, 22, 22);
     color: aliceblue;
     font-size: 24px;
     padding-left: 10%;
     padding-top: 5%;
+    padding-bottom: 5%;
+    row-gap: 15px;
 }
 /* svg{
     height: 1em;
