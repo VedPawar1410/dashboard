@@ -13,10 +13,40 @@
 }
 .left-nav{
     grid-area: 1/1/-1/2;
+    display: grid;
 }
 .search-bar{
     grid-area: 1/2/2/-1;
 }
 .right-content{
     grid-area: 2/2/-1/-1;
+}
+
+/* Left dashboard column*/
+.left-nav{
+    grid-template-rows: 1fr 3fr 8fr;
+    background-color: rgb(23, 22, 22);
+    color: aliceblue;
+    font-size: 24px;
+    padding-left: 10%;
+    padding-top: 5%;
+}
+/* svg{
+    height: 1em;
+    width: 1em;
+} */
+/* svg span{
+
+} */
+.nav-main p,
+.title p,
+.nav-settings p{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    column-gap: 10px;
+    margin: 8px 0;
+}
+.title>p>span{
+    font-size: 28px;
 }
