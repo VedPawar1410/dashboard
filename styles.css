@@ -60,3 +60,28 @@
     
     row-gap: 15px;
 }
+
+/* right content */
+.right-content{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.your-projects{
+    grid-area: 1/1/3/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.your-projects p{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-area: 1/1/2/3;
+}
+.your-projects .card {
+    background-color: #FFFFFF;
+    color: black;
+    text-align: center;
+    height: 200px;
+}
