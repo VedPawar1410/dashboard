@@ -78,10 +78,11 @@
 }
 .section-title {
     grid-column: 1 / -1; /* span both columns */
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     /* font-weight: bold; */
     color: white;
     margin-left: 25px;
+    margin-top: 35px;
 }
 .card {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* A soft, grey outer shadow */
@@ -92,7 +93,7 @@
     grid-template-columns: 1fr;
     grid-area: 1/1/2/3;
 } */
-.your-projects .card {
+.your-projects .card{
     background-color: #FFFFFF;
     color: rgb(255, 255, 255);
     text-align: center;
@@ -107,4 +108,24 @@
 }
 .card .title{
     font-weight: bold;
+}
+
+.card {
+    background-color: #2f2f2f;
+    color: white;
+    text-align: left;
+    border-radius: 10px;
+    padding: 20px;
+    height: 200px;
+    position: relative; /* required for absolute children */
+}
+.card svg {
+    position: absolute;
+    bottom: 30px;
+}
+.card svg:first-of-type {
+    right: 90px; /* first icon a bit to the left */
+}
+.card svg:last-of-type {
+    right: 40px; /* second icon at far right */
 }
