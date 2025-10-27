@@ -178,3 +178,71 @@
     width: 250px;
     position: relative; /* required for absolute children */
 }
+
+/* trending section */
+.trending{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-area: 2/2/3/3;
+}
+.trending-title {
+    grid-column: 2 / -1;
+    font-size: 1.3rem;
+    /* font-weight: bold; */
+    color: white;
+    margin-left: 25px;
+    margin-top: 35px;
+    margin-bottom: 14px;
+}
+.trending .card-trending{
+    background-color: #FFFFFF;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: #2f2f2f;
+    border-radius: 15px;
+    padding-top: 30px;
+    text-align: left;
+    width: 90%;
+    height: 88%;
+    padding-left: 20px;
+    grid-row: 2 / -1; /* spans from the 2nd row to the end */
+    /* margin-left: 25px; */
+}
+.card-trending {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /* evenly distribute items */
+    align-items: flex-start;
+    background-color: #2f2f2f;
+    border-radius: 15px;
+    padding: 20px;
+    width: 90%;
+    height: 88%;
+    color: white;
+}
+/* Each trending block */
+.trend-item {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* space between SVG and text */
+}
+/* Style the tag and text */
+.trend-item .tag {
+    font-weight: bold;
+    color: #ffcc00;
+    margin-bottom: 4px;
+}
+/* If you want SVGs smaller and aligned nicely */
+.trend-item svg {
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+}
+.trend-item > div{
+    margin: 0;
+    line-height: 1;
+}
+.trend-item:not(:last-child) {
+    border-bottom: 1px solid #444;
+    padding-bottom: 15px;
+}
