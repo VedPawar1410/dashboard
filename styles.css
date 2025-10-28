@@ -3,8 +3,9 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
-
+body {
+    font-family: "Alan Sans", sans-serif;
+}
 .container{
     display: grid;
     grid-template-columns: 1fr 4fr;
